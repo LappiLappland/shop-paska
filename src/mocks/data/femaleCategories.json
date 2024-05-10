@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Tops",
+    "items": [
+      "Blouses",
+      "Bodysuits",
+      "Button ups",
+      "Crop tops",
+      "Hoodies",
+      "Long slevee T-Shirts",
+      "Polos",
+      "Short slevee T-Shirts",
+      "Sweaters",
+      "Sweatshirts",
+      "Tank tops"
+    ]
+  },
+  {
+    "title": "Bottoms",
+    "items": [
+      "Jeans",
+      "Joggers",
+      "Jumpsuits",
+      "Leggins",
+      "Maxi skirts",
+      "Midi skirts",
+      "Mini skirts",
+      "Pants",
+      "Shorts",
+      "Sweatpants"
+    ]
+  },
+  {
+    "title": "Outerwear",
+    "items": [
+      "Blazers",
+      "Bombers",
+      "Coats",
+      "Denim jackets",
+      "Down jackets",
+      "Fur & Faux fur",
+      "Jackets",
+      "Leather jackets",
+      "Rain jackets",
+      "Vests"
+    ]
+  },
+  {
+    "title": "Dresses",
+    "items": [
+      "Mini dresses",
+      "Midi dressed",
+      "Maxi dresses",
+      "Gowns"
+    ]
+  },
+  {
+    "title": "Accessories",
+    "items": [
+      "Bags & Luggage",
+      "Belts",
+      "Glasses",
+      "Gloves & Scarves",
+      "Hats",
+      "Socks & Underwear",
+      "Sunglasses",
+      "Ties & Pocketsquares"
+    ]
+  }
+]

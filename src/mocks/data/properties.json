@@ -1,0 +1,48 @@
+[
+  {
+    "id": "0",
+    "name": "Material",
+    "options": [
+      { "name": "Metal", "value": "metal" },
+      { "name": "Wood", "value": "wood" },
+      { "name": "Brick", "value": "brick" },
+      { "name": "Stone", "value": "stone" },
+      { "name": "Gold", "value": "gold" },
+      { "name": "Silver", "value": "silver" },
+      { "name": "Cooper", "value": "cooper" }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Size",
+    "options": [
+      { "name": "XS", "value": "xs" },
+      { "name": "S", "value": "s" },
+      { "name": "M", "value": "m" },
+      { "name": "L", "value": "l" },
+      { "name": "XL", "value": "xl" },
+      { "name": "XXL", "value": "xxl" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Season",
+    "options": [
+      { "name": "Any", "value": "any" },
+      { "name": "Winter", "value": "winter" },
+      { "name": "Autumn", "value": "autumn" },
+      { "name": "Summer", "value": "summer" },
+      { "name": "Spring", "value": "spring" }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Country",
+    "options": ["Fetch from countries.json"]
+  },
+  {
+    "id": "4",
+    "name": "Color",
+    "options": ["Fetch from colors.json"]
+  }
+]

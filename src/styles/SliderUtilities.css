@@ -1,0 +1,11 @@
+.slider-animate {
+  transition: 1s transform;
+}
+
+.slider-no-animate {
+  transition: none;
+}
+
+.slider-smooth-animate {
+  transition: none;
+}

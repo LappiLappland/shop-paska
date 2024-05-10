@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonOutlined component renders button with default state 1`] = `
+<button
+  class="
+      h-10 px-3 hover:bg-border-primary/hovered disabled:text-on-surface-r relative
+      flex items-center
+      justify-center
+      border border-outline bg-transparent fill-primary stroke-primary
+      text-primary transition-colors
+      hover:bg-primary/hovered-r focus-visible:border-primary/focused
+      focus-visible:bg-primary/focused-r
+      active:bg-primary/pressed-r disabled:border-on-surface/disabled-r disabled:fill-on-surface/disabled-r disabled:stroke-on-surface/disabled-r
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`ButtonOutlined component renders button with disabled state 1`] = `
+<button
+  class="
+      h-10 px-3 hover:bg-border-primary/hovered disabled:text-on-surface-r relative
+      flex items-center
+      justify-center
+      border border-outline bg-transparent fill-primary stroke-primary
+      text-primary transition-colors
+      hover:bg-primary/hovered-r focus-visible:border-primary/focused
+      focus-visible:bg-primary/focused-r
+      active:bg-primary/pressed-r disabled:border-on-surface/disabled-r disabled:fill-on-surface/disabled-r disabled:stroke-on-surface/disabled-r
+      "
+  disabled=""
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`ButtonOutlined component renders button with padding disabled 1`] = `
+<button
+  class="
+      h-10  hover:bg-border-primary/hovered disabled:text-on-surface-r relative
+      flex items-center
+      justify-center
+      border border-outline bg-transparent fill-primary stroke-primary
+      text-primary transition-colors
+      hover:bg-primary/hovered-r focus-visible:border-primary/focused
+      focus-visible:bg-primary/focused-r
+      active:bg-primary/pressed-r disabled:border-on-surface/disabled-r disabled:fill-on-surface/disabled-r disabled:stroke-on-surface/disabled-r
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;

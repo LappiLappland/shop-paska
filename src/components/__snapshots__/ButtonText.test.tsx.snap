@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders button with default primary color 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center
+      px-3
+      transition-colors
+      
+        text-primary fill-primary stroke-primary
+        hover:bg-primary/hovered-r
+        focus-visible:bg-primary/focused-r
+        active:bg-primary/pressed-r
+        
+      bg-transparent
+      disabled:fill-on-surface disabled:stroke-on-surface disabled:text-on-surface
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`Button component renders button with secondary color 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center
+      px-3
+      transition-colors
+      
+        text-secondary fill-secondary stroke-secondary
+        hover:bg-secondary/hovered-r
+        focus-visible:bg-secondary/focused-r
+        active:bg-secondary/pressed-r
+        
+      bg-transparent
+      disabled:fill-on-surface disabled:stroke-on-surface disabled:text-on-surface
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`Button component renders button with tertiary color 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center
+      px-3
+      transition-colors
+      
+        text-tertiary fill-tertiary stroke-tertiary
+        hover:bg-tertiary/hovered-r
+        focus-visible:bg-tertiary/focused-r
+        active:bg-tertiary/pressed-r
+        
+      bg-transparent
+      disabled:fill-on-surface disabled:stroke-on-surface disabled:text-on-surface
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`Button component renders disabled button 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center
+      px-3
+      transition-colors
+      
+        text-primary fill-primary stroke-primary
+        hover:bg-primary/hovered-r
+        focus-visible:bg-primary/focused-r
+        active:bg-primary/pressed-r
+        
+      bg-transparent
+      disabled:fill-on-surface disabled:stroke-on-surface disabled:text-on-surface
+      "
+  disabled=""
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Finlandica';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/public/fonts/Finlandica/BoldItalic.ttf') format('truetype');
+}

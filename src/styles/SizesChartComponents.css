@@ -1,0 +1,15 @@
+.sizes-chart td {
+  @apply border-l border-r;
+}
+
+.sizes-chart tr {
+  @apply border-b border-t;
+}
+
+.sizes-chart td:first-child {
+  @apply border-l-0;
+}
+
+.sizes-chart td:last-child {
+  @apply border-r-0;
+}

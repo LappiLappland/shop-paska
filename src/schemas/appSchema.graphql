@@ -1,0 +1,183 @@
+schema {
+  query: Query
+}
+
+scalar Date
+
+enum Sex {
+  F
+  M
+  None
+  Apache
+}
+
+enum Tag {
+  new
+  popular
+}
+
+enum SortOptions {
+  new
+  popular
+  trending
+}
+
+type Query {
+  allProducts: [Product]
+  slicedProducts(
+    first: Int!
+    after: Int!
+    sex: Sex!
+    category: String!
+    sort: SortOptions
+    filters: [FilterOptions!]
+  ): ProductsSlice!
+  sliderProducts(type: String!, sex: String!, amount: Int!): [Product!]!
+  similarProducts(id: ID!, amount: Int!): [Product!]!
+  productMainInfo(id: ID!): Product!
+  productReviews(id: ID!, first: Int!, after: Int!): ProductsReviews
+  productsCart(products: [ProductCartParams!]!): [ProductCart!]!
+  productsFavourite(id: [ID!]!): [Product!]!
+  categoryFilters(category: String!, sex: Sex!): [CategoryFilter!]!
+  profile: User!
+  allCategories: Category!
+}
+
+type Mutation {
+  loginPhone(phone: String!): AuthPhonePayload!
+  loginPhoneCode(phone: String!, code: String!): AuthPayload!
+  loginEmail(email: String!, password: String!): AuthPayload!
+  profileMain(firstName: String, lastName: String, birth: Date, sex: Sex): User
+}
+
+interface Node {
+  id: ID!
+}
+
+type Product implements Node {
+  id: ID!
+  name: String!
+  brand: String!
+  category: String!
+  sex: Sex!
+  gallery: [String!]!
+  price: Float!
+  discount: Float!
+  prices: [ProductPrice!]!
+  sizes: [ProductSize!]!
+  tags: [Tag!]!
+  colors: [ProductColor!]!
+  description: String!
+  properties: [ProductProperty!]!
+}
+
+type ProductSize implements Node {
+  id: ID!
+  type: String!
+  value: String!
+  available: Boolean!
+}
+
+type ProductPrice {
+  colorId: ID!
+  sizeId: ID!
+  price: Float!
+  discount: Float!
+}
+
+type ProductColor implements Node {
+  id: ID!
+  name: String!
+  hex: String!
+}
+
+type ProductProperty implements Node {
+  id: ID!
+  name: String!
+  value: String!
+}
+
+type ProductReview implements Node {
+  id: ID!
+  user: User!
+  createdAt: Date!
+  rating: Int!
+  text: String!
+}
+
+type StarsCounter {
+  s1: Int!
+  s2: Int!
+  s3: Int!
+  s4: Int!
+  s5: Int!
+}
+
+type ProductsReviews {
+  totalCount: Int!
+  totalStars: StarsCounter!
+  reviews: [ProductReview!]!
+}
+
+type ProductsSlice {
+  totalCount: Int!
+  products: [Product!]!
+}
+
+type ProductCart {
+  product: Product!
+  selectedColor: ProductColor!
+  selectedSize: ProductSize!
+}
+
+input ProductCartParams {
+  id: ID!
+  size: ID!
+  color: ID!
+}
+
+input FilterOptions {
+  name: String!
+  values: [String!]!
+}
+
+type User implements Node {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  avatar: String!
+  phone: String!
+  sex: Sex!
+  birth: Date
+}
+
+type Category {
+  female: [CategoryItem!]!
+  male: [CategoryItem!]!
+}
+
+type CategoryItem {
+  title: String!
+  items: [String!]!
+}
+
+type CategoryFilter {
+  id: ID!
+  name: String!
+  options: [CheckboxOption!]!
+}
+
+type CheckboxOption {
+  name: String!
+  value: String!
+}
+
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+type AuthPhonePayload {
+  phone: String!
+}

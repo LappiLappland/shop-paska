@@ -1,0 +1,59 @@
+[
+  {
+    "id": 0,
+    "sex": "F",
+    "category": "heavy-coats",
+    "name": "Random coat",
+    "brand": "Montignac",
+    "gallery": [
+      "img/placeholder-tall",
+      "img/placeholder-tall2",
+      "img/placeholder-tall3",
+      "img/placeholder-tall3",
+      "img/placeholder-tall",
+      "img/placeholder",
+      "img/placeholder2",
+      "img/placeholder3"
+    ],
+    "tags": [],
+    "colors": [
+      {
+        "name": "Red",
+        "hex": "ff0000"
+      },
+      {
+        "name": "Green",
+        "hex": "00ff00"
+      },
+      {
+        "name": "Blue",
+        "hex": "0000ff"
+      }
+    ],
+    "sizes": [
+      {
+        "type": "european",
+        "value": "XS",
+        "available": true
+      },
+      {
+        "type": "european",
+        "value": "S",
+        "available": true
+      },
+      {
+        "type": "european",
+        "value": "L",
+        "available": false
+      }
+    ],
+    "price": 25000,
+    "discount": 0.2,
+    "description": "long description",
+    "properties": {
+      "name": "Country of origin",
+      "value": "China"
+    },
+    "reviews": []
+  }
+]

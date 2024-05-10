@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/public/fonts/Brygada1918/wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Brygada 1918';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/public/fonts/Brygada1918/wghtItalic.ttf') format('truetype');
+}

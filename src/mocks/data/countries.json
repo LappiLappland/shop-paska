@@ -1,0 +1,11 @@
+[
+  { "name": "USA", "value": "usa" },
+  { "name": "UK", "value": "gbr" },
+  { "name": "Japan", "value": "jpn" },
+  { "name": "Germany", "value": "deu" },
+  { "name": "Finland", "value": "fin" },
+  { "name": "France", "value": "fra" },
+  { "name": "Russia", "value": "rus" },
+  { "name": "Spain", "value": "esp" },
+  { "name": "China", "value": "chn" }
+]

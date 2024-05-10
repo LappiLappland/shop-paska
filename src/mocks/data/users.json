@@ -1,0 +1,13 @@
+[
+  {
+    "id": "0",
+    "firstName": "Laplas",
+    "lastName": "Saluzzo",
+    "email": "Texas@Penguins.com",
+    "password": "12345",
+    "avatar": "img/placeholder.png",
+    "phone": "88005553535",
+    "sex": "F",
+    "birth": 1642723200000
+  }
+]

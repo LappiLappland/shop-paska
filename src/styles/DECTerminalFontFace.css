@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'DEC Terminal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/public/fonts/DECTerminal/regular.ttf') format('truetype');
+}

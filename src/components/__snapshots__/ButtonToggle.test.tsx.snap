@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonToggle component renders button toggle as active 1`] = `
+<button
+  class="
+      relative border
+      transition-colors
+      
+    border-outline 
+    text-on-secondary-container fill-on-secondary-container stroke-on-secondary-container
+    bg-secondary-container
+  
+      "
+>
+  Toggle
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`ButtonToggle component renders button toggle as disabled 1`] = `
+<button
+  class="
+      relative border
+      transition-colors
+      
+    border-outline text-on-surface
+    hover:bg-secondary/hovered-r
+    focus-visible:bg-secondary/focused-r
+    active:bg-secondary/pressed-r
+  
+      "
+  disabled=""
+>
+  Toggle
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`ButtonToggle component renders button toggle with default state 1`] = `
+<button
+  class="
+      relative border
+      transition-colors
+      
+    border-outline text-on-surface
+    hover:bg-secondary/hovered-r
+    focus-visible:bg-secondary/focused-r
+    active:bg-secondary/pressed-r
+  
+      "
+>
+  Toggle
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;

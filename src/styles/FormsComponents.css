@@ -1,0 +1,15 @@
+.form-color-select label:hover ~ span {
+  @apply border;
+}
+
+.form-color-select input:checked ~ span {
+  @apply border-2 border-primary;
+}
+
+.form-size-select input:checked ~ label {
+  @apply border-2 border-neutral-800;
+}
+
+.form-search input:focus ~ label {
+  @apply ring-2;
+}

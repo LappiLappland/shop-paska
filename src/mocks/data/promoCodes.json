@@ -1,0 +1,12 @@
+[
+  {
+    "id": 0,
+    "value": "Lappland",
+    "discount": 0.25
+  },
+  {
+    "id": 1,
+    "value": "Texas",
+    "discount": 0.3
+  }
+]

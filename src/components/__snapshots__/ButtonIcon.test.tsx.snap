@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonIcon component renders button icon with default size 1`] = `
+<button
+  class="group flex flex-col items-center justify-center"
+>
+  <div
+    class="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+  >
+    <div
+      class="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 fill-on-surface-variant stroke-on-surface-variant group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary/pressed group-active:stroke-primary/pressed"
+    >
+      <svg
+        class="  "
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+        />
+      </svg>
+    </div>
+    <span
+      class="
+          absolute h-full w-full rounded-full
+          group-hover:bg-primary/hovered-r
+          group-active:bg-primary/pressed-r
+          "
+    >
+      <span
+        class="absolute inset-0 h-full w-full overflow-hidden rounded-full"
+      />
+    </span>
+    <span
+      class="
+        absolute -right-1.5 -top-1.5
+        flex h-5 origin-center items-center justify-center rounded-full bg-error
+        px-1.5 text-body-small
+        font-medium
+        text-on-error
+        transition-transform
+        duration-100
+        ease-standart-acclerate
+        scale-0 text-on-error/0
+        "
+    >
+      undefined
+    </span>
+  </div>
+  <span
+    class="text-label-large text-on-surface-variant group-hover:text-on-surface"
+  />
+</button>
+`;
+
+exports[`ButtonIcon component renders button icon with different numbers 1`] = `
+<button
+  class="group flex flex-col items-center justify-center"
+>
+  <div
+    class="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+  >
+    <div
+      class="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 fill-on-surface-variant stroke-on-surface-variant group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary/pressed group-active:stroke-primary/pressed"
+    >
+      <svg
+        class="  "
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+        />
+      </svg>
+    </div>
+    <span
+      class="
+          absolute h-full w-full rounded-full
+          group-hover:bg-primary/hovered-r
+          group-active:bg-primary/pressed-r
+          "
+    >
+      <span
+        class="absolute inset-0 h-full w-full overflow-hidden rounded-full"
+      />
+    </span>
+    <span
+      class="
+        absolute -right-1.5 -top-1.5
+        flex h-5 origin-center items-center justify-center rounded-full bg-error
+        px-1.5 text-body-small
+        font-medium
+        text-on-error
+        transition-transform
+        duration-100
+        ease-standart-acclerate
+        scale-0 text-on-error/0
+        "
+    >
+      0
+    </span>
+  </div>
+  <span
+    class="text-label-large text-on-surface-variant group-hover:text-on-surface"
+  />
+</button>
+`;
+
+exports[`ButtonIcon component renders button icon with different numbers 2`] = `
+<button
+  class="group flex flex-col items-center justify-center"
+>
+  <div
+    class="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+  >
+    <div
+      class="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 fill-on-surface-variant stroke-on-surface-variant group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary/pressed group-active:stroke-primary/pressed"
+    >
+      <svg
+        class="  "
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+        />
+      </svg>
+    </div>
+    <span
+      class="
+          absolute h-full w-full rounded-full
+          group-hover:bg-primary/hovered-r
+          group-active:bg-primary/pressed-r
+          "
+    >
+      <span
+        class="absolute inset-0 h-full w-full overflow-hidden rounded-full"
+      />
+    </span>
+    <span
+      class="
+        absolute -right-1.5 -top-1.5
+        flex h-5 origin-center items-center justify-center rounded-full bg-error
+        px-1.5 text-body-small
+        font-medium
+        text-on-error
+        transition-transform
+        duration-100
+        ease-standart-acclerate
+        scale-100 text-on-error
+        "
+    >
+      1
+    </span>
+  </div>
+  <span
+    class="text-label-large text-on-surface-variant group-hover:text-on-surface"
+  />
+</button>
+`;
+
+exports[`ButtonIcon component renders button icon with different numbers 3`] = `
+<button
+  class="group flex flex-col items-center justify-center"
+>
+  <div
+    class="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+  >
+    <div
+      class="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 fill-on-surface-variant stroke-on-surface-variant group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary/pressed group-active:stroke-primary/pressed"
+    >
+      <svg
+        class="  "
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+        />
+      </svg>
+    </div>
+    <span
+      class="
+          absolute h-full w-full rounded-full
+          group-hover:bg-primary/hovered-r
+          group-active:bg-primary/pressed-r
+          "
+    >
+      <span
+        class="absolute inset-0 h-full w-full overflow-hidden rounded-full"
+      />
+    </span>
+    <span
+      class="
+        absolute -right-1.5 -top-1.5
+        flex h-5 origin-center items-center justify-center rounded-full bg-error
+        px-1.5 text-body-small
+        font-medium
+        text-on-error
+        transition-transform
+        duration-100
+        ease-standart-acclerate
+        scale-100 text-on-error
+        "
+    >
+      10
+    </span>
+  </div>
+  <span
+    class="text-label-large text-on-surface-variant group-hover:text-on-surface"
+  />
+</button>
+`;
+
+exports[`ButtonIcon component renders button icon with different numbers 4`] = `
+<button
+  class="group flex flex-col items-center justify-center"
+>
+  <div
+    class="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+  >
+    <div
+      class="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 fill-on-surface-variant stroke-on-surface-variant group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary/pressed group-active:stroke-primary/pressed"
+    >
+      <svg
+        class="  "
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+        />
+      </svg>
+    </div>
+    <span
+      class="
+          absolute h-full w-full rounded-full
+          group-hover:bg-primary/hovered-r
+          group-active:bg-primary/pressed-r
+          "
+    >
+      <span
+        class="absolute inset-0 h-full w-full overflow-hidden rounded-full"
+      />
+    </span>
+    <span
+      class="
+        absolute -right-1.5 -top-1.5
+        flex h-5 origin-center items-center justify-center rounded-full bg-error
+        px-1.5 text-body-small
+        font-medium
+        text-on-error
+        transition-transform
+        duration-100
+        ease-standart-acclerate
+        scale-100 text-on-error
+        "
+    >
+      100
+    </span>
+  </div>
+  <span
+    class="text-label-large text-on-surface-variant group-hover:text-on-surface"
+  />
+</button>
+`;
+
+exports[`ButtonIcon component renders button icon with different numbers 5`] = `
+<button
+  class="group flex flex-col items-center justify-center"
+>
+  <div
+    class="relative w-10 h-10 md:w-12 md:h-12 flex items-center justify-center"
+  >
+    <div
+      class="flex items-center justify-center w-6 h-6 md:w-8 md:h-8 fill-on-surface-variant stroke-on-surface-variant group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary/pressed group-active:stroke-primary/pressed"
+    >
+      <svg
+        class="  "
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+        />
+      </svg>
+    </div>
+    <span
+      class="
+          absolute h-full w-full rounded-full
+          group-hover:bg-primary/hovered-r
+          group-active:bg-primary/pressed-r
+          "
+    >
+      <span
+        class="absolute inset-0 h-full w-full overflow-hidden rounded-full"
+      />
+    </span>
+    <span
+      class="
+        absolute -right-1.5 -top-1.5
+        flex h-5 origin-center items-center justify-center rounded-full bg-error
+        px-1.5 text-body-small
+        font-medium
+        text-on-error
+        transition-transform
+        duration-100
+        ease-standart-acclerate
+        scale-100 text-on-error
+        "
+    >
+      100+
+    </span>
+  </div>
+  <span
+    class="text-label-large text-on-surface-variant group-hover:text-on-surface"
+  />
+</button>
+`;
+
+exports[`ButtonIcon component renders button icon with smaller size 1`] = `
+<button
+  class="group flex flex-col items-center justify-center"
+>
+  <div
+    class="relative w-8 h-8 flex items-center justify-center"
+  >
+    <div
+      class="flex items-center justify-center w-6 h-6 fill-on-surface-variant stroke-on-surface-variant group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary/pressed group-active:stroke-primary/pressed"
+    >
+      <svg
+        class="  "
+        height="24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"
+        />
+      </svg>
+    </div>
+    <span
+      class="
+          absolute h-full w-full rounded-full
+          group-hover:bg-primary/hovered-r
+          group-active:bg-primary/pressed-r
+          "
+    >
+      <span
+        class="absolute inset-0 h-full w-full overflow-hidden rounded-full"
+      />
+    </span>
+    <span
+      class="
+        absolute -right-1.5 -top-1.5
+        flex h-5 origin-center items-center justify-center rounded-full bg-error
+        px-1.5 text-body-small
+        font-medium
+        text-on-error
+        transition-transform
+        duration-100
+        ease-standart-acclerate
+        scale-0 text-on-error/0
+        "
+    >
+      undefined
+    </span>
+  </div>
+  <span
+    class="text-label-large text-on-surface-variant group-hover:text-on-surface"
+  />
+</button>
+`;

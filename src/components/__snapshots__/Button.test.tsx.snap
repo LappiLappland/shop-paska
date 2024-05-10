@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders button with default primary color 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center rounded-button
+      px-3
+      transition-colors
+      
+        bg-primary text-on-primary 
+        hover:bg-primary/hovered
+        focus-visible:bg-primary/focused
+        active:bg-primary/pressed
+        
+      disabled:bg-on-surface/disabled-r disabled:text-on-surface
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`Button component renders button with secondary color 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center rounded-button
+      px-3
+      transition-colors
+      
+        bg-secondary text-on-secondary 
+        hover:bg-secondary/hovered
+        focus-visible:bg-secondary/focused
+        active:bg-secondary/pressed
+        
+      disabled:bg-on-surface/disabled-r disabled:text-on-surface
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`Button component renders button with tertiary color 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center rounded-button
+      px-3
+      transition-colors
+      
+        bg-tertiary text-on-tertiary
+        hover:bg-tertiary/hovered
+        focus-visible:bg-tertiary/focused
+        active:bg-tertiary/pressed
+        
+      disabled:bg-on-surface/disabled-r disabled:text-on-surface
+      "
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;
+
+exports[`Button component renders disabled button 1`] = `
+<button
+  class="
+      relative flex h-10 items-center justify-center rounded-button
+      px-3
+      transition-colors
+      
+        bg-primary text-on-primary 
+        hover:bg-primary/hovered
+        focus-visible:bg-primary/focused
+        active:bg-primary/pressed
+        
+      disabled:bg-on-surface/disabled-r disabled:text-on-surface
+      "
+  disabled=""
+>
+  Click me
+  <span
+    class="absolute inset-0 h-full w-full overflow-hidden "
+  />
+</button>
+`;

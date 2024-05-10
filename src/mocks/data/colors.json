@@ -1,0 +1,20 @@
+[
+  {"id": "0", "name": "Red", "hex": "ff0000"},
+  {"id": "1", "name": "Green", "hex": "00ff00"},
+  {"id": "2", "name": "Blue", "hex": "0000ff"},
+  {"id": "3", "name": "Magenta", "hex": "ff00ff"},
+  {"id": "4", "name": "Yellow", "hex": "ffff00"},
+  {"id": "5", "name": "Maroon", "hex": "800000"},
+  {"id": "6", "name": "Black", "hex": "000000"},
+  {"id": "7", "name": "Orange", "hex": "ff5800"},
+  {"id": "8", "name": "Bisque", "hex": "ffe4c4"},
+  {"id": "9", "name": "Celadon", "hex": "ace1af"},
+  {"id": "10", "name": "Cerise", "hex": "de3163"},
+  {"id": "11", "name": "Champagne", "hex": "cc7722"},
+  {"id": "12", "name": "Citron", "hex": "9fa91f"},
+  {"id": "13", "name": "Olive", "hex": "808000"},
+  {"id": "14", "name": "Heliotrope", "hex": "df73ff"},
+  {"id": "15", "name": "Khaki", "hex": "f0e68c"},
+  {"id": "16", "name": "Cyan", "hex": "00ffff"},
+  {"id": "17", "name": "Nickel", "hex": "727472"}
+]
