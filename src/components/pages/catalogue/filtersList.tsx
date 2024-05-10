@@ -3,6 +3,7 @@ import { Link, getRouteApi, useNavigate } from '@tanstack/react-router';
 import request from 'graphql-request';
 import { ReactNode, useEffect, useState } from 'react';
 import { Sex } from '../../../gql/graphql';
+import { pageURL } from '../../../mocks/browser';
 import getAllCategoriesQuery from '../../../queries/GetCategories';
 import getCategoryFiltersQuery from '../../../queries/GetCategoryFilters';
 import Accordion from '../../Accordion';
@@ -36,7 +37,7 @@ export default function FiltersList({ path, sex }: FiltersListProps) {
   const { data, isSuccess } = useQuery({
     queryKey: ['catalogue', path, sex],
     queryFn: async () =>
-      request('http://localhost:8080/', getCategoryFiltersQuery, {
+      request(pageURL, getCategoryFiltersQuery, {
         category: path,
         sex: sex,
       }),
@@ -45,7 +46,7 @@ export default function FiltersList({ path, sex }: FiltersListProps) {
   const { data: dataCat } = useQuery({
     queryKey: ['categories'],
     queryFn: async () =>
-      request('http://localhost:8080/', getAllCategoriesQuery, {}),
+      request(pageURL, getAllCategoriesQuery, {}),
     placeholderData: keepPreviousData,
   });
 

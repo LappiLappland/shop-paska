@@ -7,6 +7,7 @@ import Button from '../../components/Button';
 import { UserContext } from '../../components/contexts/UserContext';
 import FormInputText from '../../components/forms/InputText';
 import { validateEmail } from '../../helpers/validators';
+import { pageURL } from '../../mocks/browser';
 import getProfileQuery from '../../queries/GetProfile';
 
 export const Route = createFileRoute('/profile/email/')({
@@ -32,7 +33,7 @@ function EmailComponent() {
       return failureCount <= 3;
     },
     queryFn: async () => {
-      return request('http://localhost:8080/', getProfileQuery, {});
+      return request(pageURL, getProfileQuery, {});
     },
   });
 

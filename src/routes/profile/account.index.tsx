@@ -10,6 +10,7 @@ import FormInputText from '../../components/forms/InputText';
 import FormSelect, { FormSelectOption } from '../../components/forms/Select';
 import { GetProfileQuery, Sex } from '../../gql/graphql';
 import { formatDate } from '../../helpers/formatDate';
+import { pageURL } from '../../mocks/browser';
 import getProfileQuery from '../../queries/GetProfile';
 import putProfileMainMutation from '../../queries/PutProfileMain';
 
@@ -46,12 +47,12 @@ function ProfileComponent() {
       return failureCount <= 3;
     },
     queryFn: async () => {
-      return request('http://localhost:8080/', getProfileQuery, {});
+      return request(pageURL, getProfileQuery, {});
     },
   });
 
   function editMainInfo(values: FormValues) {
-    return request('http://localhost:8080/', putProfileMainMutation, {
+    return request(pageURL, putProfileMainMutation, {
       firstName: values.firstName,
       lastName: values.lastName,
       birth: new Date(values.birth).valueOf(),

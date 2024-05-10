@@ -7,6 +7,7 @@ import CategoryCards from '../components/pages/catalogue/categoryCards';
 import SliderLong from '../components/sliderLong/SliderLong';
 import { stringUpperStart } from '../helpers/string';
 import useTitle from '../hooks/useTitle';
+import { pageURL } from '../mocks/browser';
 import getSliderProductsQuery from '../queries/GetSliderProducts';
 
 interface CatalogSearch {
@@ -33,7 +34,7 @@ function CatalogComponent() {
   const { data } = useQuery({
     queryKey: ['slider', 'popular', 'menswear', '9'],
     queryFn: async () =>
-      request('http://localhost:8080/', getSliderProductsQuery, {
+      request(pageURL, getSliderProductsQuery, {
         type: 'popular',
         sex: 'M',
         amount: 12,

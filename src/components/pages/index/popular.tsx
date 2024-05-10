@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import request from 'graphql-request';
+import { pageURL } from '../../../mocks/browser';
 import getSliderProductsQuery from '../../../queries/GetSliderProducts';
 import ProductSmall from '../../ProductSmall';
 import SliderLong from '../../sliderLong/SliderLong';
@@ -8,7 +9,7 @@ export default function MeetPopular() {
   const { data } = useQuery({
     queryKey: ['slider', 'popular', 'any', '10'],
     queryFn: async () =>
-      request('http://localhost:8080/', getSliderProductsQuery, {
+      request(pageURL, getSliderProductsQuery, {
         type: 'popular',
         sex: 'any',
         amount: 12,

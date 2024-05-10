@@ -7,6 +7,7 @@ import formatNumber from '../helpers/formatNumber';
 import { getDiscounted } from '../helpers/getDiscounted';
 import imageResolve from '../helpers/imageResolve';
 import resetScroll from '../helpers/resetScroll';
+import { pageURL } from '../mocks/browser';
 import getProductInfoQuery from '../queries/getProductInfo';
 import ProductTag from './ProductTag';
 
@@ -107,7 +108,7 @@ export default function ProductSmall({
         queryClient.prefetchQuery({
           queryKey: ['product', 'main', id],
           queryFn: async () =>
-            request('http://localhost:8080/', getProductInfoQuery, { id: id }),
+            request(pageURL, getProductInfoQuery, { id: id }),
           staleTime: 60000,  
         })
         didPrefetch.current = true;

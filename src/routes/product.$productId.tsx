@@ -6,6 +6,7 @@ import MainInfo from '../components/pages/product/MainInfo';
 import SimilarProducts from '../components/pages/product/SimilarProducts';
 import ProductReviews from '../components/pages/product/reviews/GoodsReviews';
 import useTitle from '../hooks/useTitle';
+import { pageURL } from '../mocks/browser';
 import getProductInfoShortQuery from '../queries/GetProductShort';
 import getProductInfoQuery from '../queries/getProductInfo';
 
@@ -19,13 +20,13 @@ function ProductComponent() {
   const { data: dataShort } = useQuery({
     queryKey: ['product', 'short', productId],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductInfoShortQuery, { id: productId }),
+      request(pageURL, getProductInfoShortQuery, { id: productId }),
   });
 
   const { data: dataFull, isFetching: isFetchingFull } = useQuery({
     queryKey: ['product', 'main', productId],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductInfoQuery, { id: productId }),
+      request(pageURL, getProductInfoQuery, { id: productId }),
   });
 
   useTitle(dataFull?.productMainInfo.name || dataShort?.productMainInfo.name);

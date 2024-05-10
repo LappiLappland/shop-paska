@@ -5,6 +5,7 @@ import { useContext } from 'react';
 import { queryClient } from '..';
 import ProductSmall from '../components/ProductSmall';
 import { FavouriteContext } from '../components/contexts/FavouriteContext';
+import { pageURL } from '../mocks/browser';
 import getFavouriteProductsQuery from '../queries/getFavouriteProducts';
 
 export const Route = createFileRoute('/favourite/')({
@@ -14,7 +15,7 @@ export const Route = createFileRoute('/favourite/')({
     queryClient.prefetchQuery({  
       queryKey: ['favourite'],
       queryFn: async () =>
-        request('http://localhost:8080/', getFavouriteProductsQuery, {
+        request(pageURL, getFavouriteProductsQuery, {
           id: favourite,
         }),
     })
@@ -27,7 +28,7 @@ function FavouriteComponent() {
   const { data } = useQuery({
     queryKey: ['favourite'],
     queryFn: async () =>
-      request('http://localhost:8080/', getFavouriteProductsQuery, {
+      request(pageURL, getFavouriteProductsQuery, {
         id: favourite,
       }),
   });

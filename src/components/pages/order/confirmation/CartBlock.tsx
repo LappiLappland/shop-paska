@@ -6,6 +6,7 @@ import { CartContext } from '../../../../components/contexts/CartContext';
 import CartIcon from '../../../../components/icons/CartIcon';
 import EditIcon from '../../../../components/icons/EditIcon';
 import imageResolve from '../../../../helpers/imageResolve';
+import { pageURL } from '../../../../mocks/browser';
 import getProductsCartQuery from '../../../../queries/getCartProducts';
 import MethodBlock from '../MethodBlock';
 
@@ -33,7 +34,7 @@ function ContentBottom() {
   const { data } = useQuery({
     queryKey: ['cart', 'products'],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductsCartQuery, {
+      request(pageURL, getProductsCartQuery, {
         products: cart,
       }),
   });

@@ -8,6 +8,7 @@ import FiltersButton from '../components/pages/catalogue/filtersButton';
 import PageSelect from '../components/pages/catalogue/pageSelect';
 import { FilterOptions, Sex, SortOptions } from '../gql/graphql';
 import useTitle from '../hooks/useTitle';
+import { pageURL } from '../mocks/browser';
 import getProductsSliceQuery from '../queries/GetProductsSlice';
 import { CatalogSortOprionsType } from '../types/CatalogSortOptions';
 
@@ -56,7 +57,7 @@ function CatalogComponent() {
       filters,
     ],
     queryFn: async () => {
-      return request('http://localhost:8080/', getProductsSliceQuery, {
+      return request(pageURL, getProductsSliceQuery, {
         first: productsPerPage,
         after: productsPerPage * (page - 1),
         sex: sex,

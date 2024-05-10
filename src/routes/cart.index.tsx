@@ -7,6 +7,7 @@ import { CartContext } from '../components/contexts/CartContext';
 import CartItem from '../components/pages/cart/CartItem';
 import OrderContainer from '../components/pages/cart/OrderContainer';
 import { getDiscounted } from '../helpers/getDiscounted';
+import { pageURL } from '../mocks/browser';
 import getProductsCartQuery from '../queries/getCartProducts';
 
 export const Route = createFileRoute('/cart/')({
@@ -16,7 +17,7 @@ export const Route = createFileRoute('/cart/')({
     queryClient.prefetchQuery({
       queryKey: ['cart', 'products', cart.map(e => {return {color: e.color, id: e.id, size: e.size}})],
       queryFn: async () =>
-        request('http://localhost:8080/', getProductsCartQuery, {
+        request(pageURL, getProductsCartQuery, {
           products: cart,
         }),
     })
@@ -30,7 +31,7 @@ function CartComponent() {
   const { data, isSuccess } = useQuery({
     queryKey: ['cart', 'products', cart.map(e => {return {color: e.color, id: e.id, size: e.size}})],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductsCartQuery, {
+      request(pageURL, getProductsCartQuery, {
         products: cart,
       }),
     placeholderData: keepPreviousData,

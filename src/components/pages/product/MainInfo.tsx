@@ -3,6 +3,7 @@ import request from 'graphql-request';
 import { useMemo, useState } from 'react';
 import formatNumber from '../../../helpers/formatNumber';
 import { getDiscounted } from '../../../helpers/getDiscounted';
+import { pageURL } from '../../../mocks/browser';
 import getProductInfoShortQuery from '../../../queries/GetProductShort';
 import getProductInfoQuery from '../../../queries/getProductInfo';
 import Accordion from '../../Accordion';
@@ -27,13 +28,13 @@ export default function MainInfo({ productId }: MainInfoProps) {
   const { data: dataShort } = useQuery({
     queryKey: ['product', 'short', productId],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductInfoShortQuery, { id: productId }),
+      request(pageURL, getProductInfoShortQuery, { id: productId }),
   });
 
   const { data: dataFull } = useQuery({
     queryKey: ['product', 'main', productId],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductInfoQuery, { id: productId }),
+      request(pageURL, getProductInfoQuery, { id: productId }),
   });
 
   const mappedPrices = useMemo(() => {

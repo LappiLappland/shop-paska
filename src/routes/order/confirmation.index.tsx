@@ -11,6 +11,7 @@ import OrderContainer from '../../components/pages/cart/OrderContainer';
 import MethodBlock from '../../components/pages/order/MethodBlock';
 import CartBlock from '../../components/pages/order/confirmation/CartBlock';
 import { getDiscounted } from '../../helpers/getDiscounted';
+import { pageURL } from '../../mocks/browser';
 import getProductsCartQuery from '../../queries/getCartProducts';
 
 export const Route = createFileRoute('/order/confirmation/')({
@@ -25,7 +26,7 @@ function ConfirmationComponent() {
   const { data, isSuccess } = useQuery({
     queryKey: ['cart', 'products', cart.map(e => {return {color: e.color, id: e.id, size: e.size}})],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductsCartQuery, {
+      request(pageURL, getProductsCartQuery, {
         products: cart,
       }),
     placeholderData: keepPreviousData,

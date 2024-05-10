@@ -1,9 +1,10 @@
-import ReviewsDisplay from './ReivewsDisplay';
-import StarsDisplay from './StarsDisplay';
-import request from 'graphql-request';
 import { useInfiniteQuery } from '@tanstack/react-query';
+import request from 'graphql-request';
+import { pageURL } from '../../../../mocks/browser';
 import getProductReviewsQuery from '../../../../queries/GetProductReviews';
 import ButtonText from '../../../ButtonText';
+import ReviewsDisplay from './ReivewsDisplay';
+import StarsDisplay from './StarsDisplay';
 
 const showMore = 3;
 
@@ -15,7 +16,7 @@ export default function ProductReviews({ productId }: ProductReviewsProps) {
   const { data, fetchNextPage, hasNextPage, isFetching } = useInfiniteQuery({
     queryKey: ['reviews', productId],
     queryFn: async ({ pageParam = 0 }) =>
-      request('http://localhost:8080/', getProductReviewsQuery, {
+      request(pageURL, getProductReviewsQuery, {
         id: productId,
         first: showMore,
         after: pageParam,

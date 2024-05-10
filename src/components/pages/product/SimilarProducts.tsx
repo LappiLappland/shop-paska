@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import request from 'graphql-request';
+import { pageURL } from '../../../mocks/browser';
 import getSimilarProductsQuery from '../../../queries/GetSimilarProducts';
 import ProductSmall from '../../ProductSmall';
 import SliderLong from '../../sliderLong/SliderLong';
@@ -12,7 +13,7 @@ export default function SimilarProducts({ productId }: SimilarProductsProps) {
   const { data } = useQuery({
     queryKey: ['slider', 'similar', productId, '12'],
     queryFn: async () =>
-      request('http://localhost:8080/', getSimilarProductsQuery, {
+      request(pageURL, getSimilarProductsQuery, {
         id: productId,
         amount: 12,
       }),

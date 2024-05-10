@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from '@tanstack/react-router';
 import request from 'graphql-request';
 import roundNumber from '../../../helpers/roundNumber';
+import { pageURL } from '../../../mocks/browser';
 import getProductReviewsTotalQuery from '../../../queries/GetProductReviewsTotal';
 import StarIcon from '../../icons/StarIcon';
 
@@ -13,7 +14,7 @@ export default function RatingLine({ productId }: RatingLineProps) {
   const { data } = useQuery({
     queryKey: ['product', 'reviews', 'total', productId],
     queryFn: async () =>
-      request('http://localhost:8080/', getProductReviewsTotalQuery, {
+      request(pageURL, getProductReviewsTotalQuery, {
         id: productId,
         first: 0,
         after: 0,
