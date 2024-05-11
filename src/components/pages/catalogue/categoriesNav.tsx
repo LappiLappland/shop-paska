@@ -50,6 +50,7 @@ function SmallerList({ title, items, sex }: SmallerListProps) {
             '/' +
             (e === 'Check all' ? '' : e)
           }
+          preload="intent"
         >
           {e}
         </Link>

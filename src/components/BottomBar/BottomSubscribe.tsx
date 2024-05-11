@@ -7,7 +7,7 @@ export default function BottomSubscribe() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <section className="min-w-3/5 mt-8 flex flex-col items-center justify-between border p-6 md:flex-row">
+    <section className="miw-w-[60%] md:min-w-full lg:min-w-[60%] mt-8 flex flex-col items-center justify-between border p-6 md:flex-row">
       <div className="mb-6 flex basis-1/2 items-center md:mb-0">
         <img className="mr-4 h-8" src={envelope} alt="" />
         <p className="text-headline-small antialiased">Subscribie for news</p>

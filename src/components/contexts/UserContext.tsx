@@ -30,14 +30,16 @@ export default function UserProvider({ children }: UserProviderProps) {
   const queryClient = useQueryClient();
 
   useEffect(() => {
-    const savedCookie = Cookies.get('token') + '';
+    //const savedCookie = Cookies.get('token') + '';
+    const savedCookie = localStorage.getItem('token');
     if (savedCookie) {
       setToken(savedCookie);
     }
   }, []);
 
   useEffect(() => {
-    Cookies.set('token', token);
+    //Cookies.set('token', token);
+    localStorage.setItem('token', token);
   }, [token]);
 
   async function login(email: string, password: string) {

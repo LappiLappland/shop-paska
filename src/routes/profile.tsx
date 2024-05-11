@@ -15,21 +15,22 @@ export const Route = createFileRoute('/profile')({
 function ProfileLayoutComponent() {
   const breakpoint = useResize();
   const children = useRouterState({ select: (s) => s.location });
-  const currentChild = children.pathname.split('/')[2];
+  const splitted = children.pathname.split('/');
+  const currentChild = splitted[splitted.length - 1];
 
   if (!currentChild) return null;
 
   return (
-    <div className="grid grow grid-cols-[max-content_auto] grid-rows-[max-content]">
+    <div className="grid grow grid-cols-1 md:grid-cols-[max-content_auto] grid-rows-[max-content]">
       <span />
 
-      <h1 className="w-full border-b border-outline-variant py-4 text-center text-display-small font-bold text-on-surface">
+      <h1 className="w-full md:border-b border-outline-variant py-4 text-center text-display-small font-bold text-on-surface">
         {stringUpperStart(currentChild) + ' settings'}
       </h1>
       {breakpoint === 'sm' ? (
-        <div className="border-r border-outline-variant">
+        <aside className="border-b border-outline-variant">
           <ProfileNavButton currentPath={currentChild} />
-        </div>
+        </aside>
       ) : (
         <aside className="border-r border-t border-outline-variant">
           <ProfileNav selected={currentChild} />

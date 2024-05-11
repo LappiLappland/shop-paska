@@ -13,9 +13,20 @@ import CartBlock from '../../components/pages/order/confirmation/CartBlock';
 import { getDiscounted } from '../../helpers/getDiscounted';
 import { pageURL } from '../../mocks/browser';
 import getProductsCartQuery from '../../queries/getCartProducts';
+import { queryClient } from '../..';
 
 export const Route = createFileRoute('/order/confirmation/')({
   component: ConfirmationComponent,
+  loader: (match) => {
+
+    queryClient.prefetchQuery({
+      queryKey: ['cart', 'products'],
+      queryFn: async () =>
+        request(pageURL, getProductsCartQuery, {
+          products: match.context.cart?.cart ?? [],
+        }),
+    })
+  }
 });
 
 function ConfirmationComponent() {

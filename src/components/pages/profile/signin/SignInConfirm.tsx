@@ -57,7 +57,7 @@ export default function SignInConfirm({ onSubmit, phone }: SignInConfirmProps) {
 
   return (
     <form
-      className="flex h-min flex-col items-center rounded-md bg-surface-container-high px-7 py-4 shadow-level-1"
+      className="flex grow-0 h-min flex-col items-center rounded-md bg-surface-container-high px-7 py-4 shadow-level-1"
       onSubmit={formik.handleSubmit}
     >
       <h1 className="mb-1 w-full text-left text-title-large font-bold text-on-surface antialiased">
@@ -100,13 +100,18 @@ export default function SignInConfirm({ onSubmit, phone }: SignInConfirmProps) {
         Sign up
       </Button>
       <ButtonText
-        className="rounded-button text-label-large font-semibold"
+        className="rounded-button flex flex-col text-label-large font-semibold"
         type="button"
         onClick={newCodeHandler}
       >
         {allowAgain
-          ? `You can get a new code in ${allowAgain} seconds`
-          : 'Get a new code'}
+          ? (
+            <>
+              <span>You can send new code in</span>
+              <span>{allowAgain} seconds</span>
+            </>
+          )
+          : 'Send new code'}
       </ButtonText>
     </form>
   );

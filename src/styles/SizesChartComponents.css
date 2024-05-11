@@ -1,9 +1,9 @@
 .sizes-chart td {
-  @apply border-l border-r;
+  @apply border-l border-r border-outline-variant;
 }
 
 .sizes-chart tr {
-  @apply border-b border-t;
+  @apply border-b border-t border-outline-variant;
 }
 
 .sizes-chart td:first-child {

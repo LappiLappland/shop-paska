@@ -9,7 +9,7 @@ const placeholderRight = 'img/main-image-men';
 
 export default function Meet() {
   return (
-    <section className="mb-8 w-full grid-cols-[auto_minmax(20%,500px)] gap-1 lg:grid">
+    <section className="mb-8 w-full grid-cols-[auto_minmax(20%,500px)] lg:grid-cols[auto_5%] gap-1 lg:grid">
       <div className="mb-1 h-[550px]">
         <SliderBig sliderSwitchTime={10000}>
           <picture

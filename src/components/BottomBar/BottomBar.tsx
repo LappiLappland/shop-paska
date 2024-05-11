@@ -82,10 +82,10 @@ export default function BottomBar() {
         <BottomLinksList title="Online" links={linksOnline} />
         <BottomSocials />
       </div>
-      <div className="mb-4 flex justify-center">
+      <div className="flex justify-center">
         <BottomSubscribe />
       </div>
-      <span className="pt-3 flex justify-center border-t border-t-outline-variant">
+      <span className="pt-3 mt-8 flex justify-center border-t border-t-outline-variant">
         Copyright © 2024 DrillDrip. All rights reserved.
       </span>
     </footer>

@@ -11,7 +11,7 @@ export default function BottomSocials() {
           <a className="text-base-large mr-2.5 hover:underline" href="tel:">
             8 880 555 35 35
           </a>
-          <span className="text-label-large ">7:00 – 22:00 МСК</span>
+          <span className="text-label-large ">7:00 – 22:00 UTC</span>
         </div>
         <a className="text-base-large hover:underline" href="mailto:">
           support@drilldrip.com

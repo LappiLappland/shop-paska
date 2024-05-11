@@ -13,6 +13,7 @@ export default function FavouriteButton() {
     <Link
       className="top-bar-button relative flex flex-col items-center"
       to="/favourite"
+      preload="intent"
     >
       <ButtonIcon text="" number={amount} ariaLabel='Favourite page'>
         <HeartIcon className="h-full w-full stroke-2" />

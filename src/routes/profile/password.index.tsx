@@ -63,7 +63,7 @@ function PasswordComponent() {
       className="flex grow flex-col items-center justify-center py-12"
       onSubmit={formik.handleSubmit}
     >
-      <div className="w-[55%]">
+      <div className="w-[55%] flex flex-col">
         <div className="mb-3">
           <span className="text-title-small text-on-surface-variant after:mx-2 after:content-['—']">
             Confirmation code will be sent to
@@ -98,7 +98,7 @@ function PasswordComponent() {
         >
           {editMsg.text}
         </span>
-        <Button className="mt-6 w-56">Change password</Button>
+        <Button className="mt-6 w-56 self-center">Change password</Button>
       </div>
     </form>
   );

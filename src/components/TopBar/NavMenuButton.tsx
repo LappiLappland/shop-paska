@@ -9,7 +9,7 @@ export default function NavMenuButton() {
   return (
     <>
       <ButtonToggle
-        className="mr-3 rounded-lg md:mr-6 ml-0 md:ml-6"
+        className="mr-3 rounded-lg lg:mr-6 ml-0 lg:ml-6"
         rippleClassName="rounded-lg"
         active={showModal}
         onClick={() => setShowModal(true)}

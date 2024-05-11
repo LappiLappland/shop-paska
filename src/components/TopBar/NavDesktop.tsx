@@ -7,6 +7,11 @@ export default function NavDesktop() {
         className="mr-4 hover:underline"
         to="/catalog"
         search={{ sex: 'menswear' }}
+        activeProps={() => {
+          return {
+            className: 'underline',
+          }
+        }}
       >
         Menswear
       </Link>
@@ -14,6 +19,11 @@ export default function NavDesktop() {
         className="mr-4 hover:underline"
         to="/catalog"
         search={{ sex: 'womenswear' }}
+        activeProps={() => {
+          return {
+            className: 'underline',
+          }
+        }}
       >
         Womenswear
       </Link>

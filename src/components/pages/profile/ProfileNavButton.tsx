@@ -14,8 +14,9 @@ export default function ProfileNavButton({
 
   return (
     <>
-      <ButtonToggle active={showModal} onClick={() => setShowModal(true)}>
-        <SettingsIcon className="h-10 w-10" />
+      <ButtonToggle className='flex items-center px-2 py-0.5' active={showModal} onClick={() => setShowModal(true)}>
+        <SettingsIcon className="h-8 w-8" />
+        More settings
       </ButtonToggle>
       <ProfileNavModal
         isOpened={showModal}

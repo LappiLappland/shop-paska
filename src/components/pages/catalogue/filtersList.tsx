@@ -35,7 +35,7 @@ export default function FiltersList({ path, sex }: FiltersListProps) {
   const searchParams = routeApi.useSearch();
 
   const { data, isSuccess } = useQuery({
-    queryKey: ['catalogue', path, sex],
+    queryKey: ['filters', path, sex],
     queryFn: async () =>
       request(pageURL, getCategoryFiltersQuery, {
         category: path,

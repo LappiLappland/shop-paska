@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { RouterProvider, createHashHistory, createRouter } from '@tanstack/react-router';
+import { RouterProvider, createBrowserHistory, createHashHistory, createRouter } from '@tanstack/react-router';
 import React, { useContext } from 'react';
 import { createRoot } from 'react-dom/client';
 import npmPackage from '../package.json';
@@ -12,7 +12,7 @@ import './style.css';
 const router = createRouter({
   routeTree: routeTree,
   basepath: npmPackage.homepage + '/',
-  history: createHashHistory(),
+  history: createBrowserHistory(),
 });
 
 declare module '@tanstack/react-router' {

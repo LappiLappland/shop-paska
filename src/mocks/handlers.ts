@@ -344,7 +344,10 @@ export const handlers = [
     }
   }),
   graphql.query('GetProfile', ({ variables, cookies }) => {
-    const token = (cookies.token as string)?.toLowerCase();
+    //It's not gonna work like that
+    //const token = (cookies.token as string)?.toLowerCase();
+
+    const token = localStorage.getItem('token');
 
     const user = usersDataBase.find((e) => e.id === token);
 

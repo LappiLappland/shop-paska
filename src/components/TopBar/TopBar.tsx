@@ -19,17 +19,17 @@ export default function TopBar() {
       <div className="mr-0 flex grow justify-between md:mr-4">
         <Link className="mr-5 flex items-end md:mr-4" to="/" data-testid="nav-logo">
           <img className="h-14 md:h-16" src={logo} height={64} alt="" />
-          <span className="hidden md:inline text-headline-small ml-1 mb-2 md:text-headline-large">
+          <span className="hidden md:inline text-headline-small ml-1 my-auto md:text-headline-large">
             DrillDrip
           </span>
         </Link>
-        <nav className="mx-0 flex grow items-center justify-start md:mx-3 md:justify-between">
+        <nav className="mx-0 flex grow items-center justify-start md:mx-3 lg:justify-between">
           {breakpoint === 'sm' || breakpoint === 'md' ? (
             <NavMenuButton />
           ) : (
             <NavDesktop />
           )}
-          {breakpoint === 'sm' ? (
+          {breakpoint === 'sm' || breakpoint === 'md' ? (
             <SearchButton search={search} setSearch={(v) => setSearch(v)} />
           ) : (
             <SearchBar

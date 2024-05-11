@@ -6,7 +6,6 @@ import CategoriesNav from '../components/pages/catalogue/categoriesNav';
 import CategoryCards from '../components/pages/catalogue/categoryCards';
 import SliderLong from '../components/sliderLong/SliderLong';
 import { stringUpperStart } from '../helpers/string';
-import useTitle from '../hooks/useTitle';
 import { pageURL } from '../mocks/browser';
 import getSliderProductsQuery from '../queries/GetSliderProducts';
 
@@ -28,8 +27,6 @@ export const Route = createFileRoute('/catalog/')({
 
 function CatalogComponent() {
   const { sex } = Route.useSearch();
-
-  useTitle(stringUpperStart(sex));
 
   const { data } = useQuery({
     queryKey: ['slider', 'popular', 'menswear', '9'],

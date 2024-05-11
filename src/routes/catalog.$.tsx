@@ -11,6 +11,7 @@ import useTitle from '../hooks/useTitle';
 import { pageURL } from '../mocks/browser';
 import getProductsSliceQuery from '../queries/GetProductsSlice';
 import { CatalogSortOprionsType } from '../types/CatalogSortOptions';
+import { queryClient } from '..';
 
 interface CatalogSearch {
   sort: CatalogSortOprionsType;
@@ -27,6 +28,42 @@ export const Route = createFileRoute('/catalog/$')({
       page: Number(search?.page ?? 1),
     };
   },
+  loaderDeps: ({search: { sort, page, ...filter }}) => ({sort, page, ...filter}),
+  loader: (match) => {
+    const { sort: sortFilter, page, ...filters } = match.deps;
+
+    const paths = match.params
+      ._splat.split('/')
+      .map((path) => path[0].toUpperCase() + path.slice(1));
+    const sex: Sex = paths[0] === 'Menswear' ? Sex.M : Sex.F;
+    
+    queryClient.prefetchQuery({
+      queryKey: [
+        'catalogue',
+        match.params._splat,
+        page,
+        sortFilter,
+        filters,
+      ],
+      queryFn: async () => {
+        return request(pageURL, getProductsSliceQuery, {
+          first: productsPerPage,
+          after: productsPerPage * (page - 1),
+          sex: sex,
+          category: paths.slice(1).join('/'),
+          sort: sortFilter as SortOptions,
+          filters: Object.entries(filters).map((filter) => {
+            return {
+              name: filter[0],
+              values: filter[1],
+            };
+          }) as FilterOptions[],
+        });
+      },
+    })
+
+    
+  }
 });
 
 const options: (FormSelectOption & { value: CatalogSortOprionsType })[] = [
