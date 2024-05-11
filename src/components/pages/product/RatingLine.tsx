@@ -11,7 +11,7 @@ interface RatingLineProps {
 }
 
 export default function RatingLine({ productId }: RatingLineProps) {
-  const { data } = useQuery({
+  const { data, isFetched } = useQuery({
     queryKey: ['product', 'reviews', 'total', productId],
     queryFn: async () =>
       request(pageURL, getProductReviewsTotalQuery, {
@@ -33,14 +33,24 @@ export default function RatingLine({ productId }: RatingLineProps) {
 
   return (
     <Link
-      className="hidden w-max border-b border-b-transparent text-label-medium text-on-surface-variant hover:border-on-surface-variant lg:flex"
+      className="flex w-max border-b border-b-transparent text-label-medium text-on-surface-variant hover:border-on-surface-variant"
       hash="reviews"
     >
-      <span className='flex items-center after:mx-1.5 after:content-["•"]'>
-        <StarIcon className="mb-0.5 mr-1 h-3 w-3" active />
-        {avg}
-      </span>
-      <span>{(data?.productReviews?.totalCount || '0') + ' reviews'}</span>
+      {isFetched && totalRating === null ? (
+        <span className='flex items-center after:mx-1.5 after:content-["•"]'>
+          <StarIcon className="mb-0.5 mr-1 h-3 w-3" active />
+          No reviews
+        </span>
+      ) : (
+        <>
+          <span className='flex items-center after:mx-1.5 after:content-["•"]'>
+            <StarIcon className="mb-0.5 mr-1 h-3 w-3" active />
+            {avg}
+          </span>
+          <span>{(data?.productReviews?.totalCount || '0') + ' reviews'}</span>
+        </>
+      )}
+
     </Link>
   );
 }

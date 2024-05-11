@@ -61,7 +61,7 @@ function FavouriteComponent() {
           You have not added anything to favourite yet!
         </span>
       ) : (
-        <ul className="mb-3 grid grid-cols-5 gap-4">{itemsEl}</ul>
+        <ul className="mb-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">{itemsEl}</ul>
       )}
     </>
   );

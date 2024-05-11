@@ -81,7 +81,7 @@ function ConfirmationComponent() {
         ]}
         current={3}
       />
-      <div className="mb-8 flex w-3/4 flex-col-reverse items-center justify-center lg:flex-row">
+      <div className="mb-8 flex w-3/4 flex-col-reverse mt-0 lg:mt-14 lg:items-start items-center justify-center lg:flex-row">
         <div className="flex w-full grow flex-col border-t px-0 md:px-8 pt-2 lg:w-auto">
           <h2 className="mb-0.5 text-headline-medium font-bold text-on-surface">
             Method of obtaining

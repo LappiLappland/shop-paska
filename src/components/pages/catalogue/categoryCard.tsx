@@ -23,6 +23,7 @@ export default function CategoryCard({
         className={`flex h-full w-full cursor-pointer rounded-lg border bg-surface-container-highest text-on-surface antialiased transition-shadow hover:bg-surface-container-highest/hovered hover:shadow-level-1
         ${direction === 'row' ? 'h-[280px] flex-row' : 'min-h-[430px] flex-col'}`}
         to={link}
+        preload="intent"
       >
         <picture className="flex shrink grow justify-center bg-transparent">
           <source srcSet={imageResolve(direction === 'column' ? placeholder : placeholder2, 'webp')} type="image/webp" />

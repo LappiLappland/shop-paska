@@ -57,7 +57,7 @@ export default function SignInConfirm({ onSubmit, phone }: SignInConfirmProps) {
 
   return (
     <form
-      className="flex grow-0 h-min flex-col items-center rounded-md bg-surface-container-high px-7 py-4 shadow-level-1"
+      className="flex min-w-80 grow-0 h-min flex-col items-center rounded-md bg-surface-container-high px-7 py-4 shadow-level-1"
       onSubmit={formik.handleSubmit}
     >
       <h1 className="mb-1 w-full text-left text-title-large font-bold text-on-surface antialiased">
